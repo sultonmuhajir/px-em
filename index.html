@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Px and Em</title>
+   <link rel="icon" href="img/favicon.ico">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+
+      <!-- => Header -->
+      <header>
+         <h2>Px and Em</h2>
+      </header>
+
+
+      <!-- => Main -->
+      <main>
+         <img src="img/pxem.png" alt="Px-Em"><br>
+         <div class="box">
+            <label for="default">Default pixel size</label><br>
+            <div class="deff">
+               <input type="text" name="default" id="default" autocomplete="off" value="16" disabled><br>
+               <i id="edit" class="fas fa-edit"></i>
+               <i id="lock" class="fas fa-lock"></i>
+            </div>
+         </div>
+         <div class="box">
+            <label for="px">Pixel</label><br>
+            <input type="text" name="px" id="px" autocomplete="off"><br>
+         </div>
+         <div class="box">
+            <label for="em">Em</label><br>
+            <input type="text" name="em" id="em" autocomplete="off"><br>
+         </div>
+      </main>
+
+
+      <!-- => Footer -->
+      <footer>
+         <p>&copy All Rights Reserved by Mhjr</p>
+      </footer>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
