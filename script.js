@@ -14,6 +14,24 @@ const result = (id, hsl) => {
    }
 }
 
+const lockk = () => {
+   def.disabled = true;
+   px.disabled = false;
+   em.disabled = false;
+   lock.style.display = "none";
+   edit.style.display = "initial";
+}
+
+def.addEventListener("keyup", function (e) {
+   if (e.keyCode === 13) {
+      lockk();
+   }
+});
+
+lock.addEventListener("click", function () {
+   lockk();
+});
+
 edit.addEventListener("click", function () {
    def.disabled = false;
    px.disabled = true;
@@ -22,14 +40,6 @@ edit.addEventListener("click", function () {
    em.value = null;
    edit.style.display = "none";
    lock.style.display = "initial";
-});
-
-lock.addEventListener("click", function () {
-   def.disabled = true;
-   px.disabled = false;
-   em.disabled = false;
-   lock.style.display = "none";
-   edit.style.display = "initial";
 });
 
 px.addEventListener("keyup", function () {
